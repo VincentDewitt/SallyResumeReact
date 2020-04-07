@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally's Resume</title>
+</head>
+<body>
+    <div id="application-root">
+
+    </div>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+    <script type="text/babel">
+    function App(){
+        return(
+            <div>
+            <header lang="en-US">
+             <h1>Sally Student Resume</h1>
+            </header>
+            <section className="ContactMe">
+        <h2> Sally's Contact info</h2>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" 
+      alt="a picture of sally student" height="300" width="200" />
+      <p>Sally Student <br /></p>
+      <address>
+        <a href="mailto:Sally@student.com">Sally@student.com</a><br />
+        <a href="tel:5058675309">505-867-5309</a>
+      </address>
+      </section>
+      <section lang="en-US" className="WorkHistory">
+        <h2> Work History</h2>
+            <p>Gamestop, Sales  <br /> January 2015 to January 2016 <br /> orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra scelerisque urna vel porta. Pellentesque sem risus, imperdiet ac lacinia et, condimentum eu erat. Nulla nec fringilla ex. Proin maximus lacinia risus, sed varius ante tincidunt vitae. In vestibulum porttitor tortor, vitae cursus libero congue nec. Etiam sed ligula dictum, aliquet est eget, maximus purus. Aliquam finibus enim risus, vitae tempor nulla feugiat et. Nulla ut rutrum lectus. Duis ac dolor et felis laoreet sollicitudin</p>
+            <p>Amazon, Junior Developer <br /> January 2016 to Current Day <br /> orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra scelerisque urna vel porta. Pellentesque sem risus, imperdiet ac lacinia et, condimentum eu erat. Nulla nec fringilla ex. Proin maximus lacinia risus, sed varius ante tincidunt vitae. In vestibulum porttitor tortor, vitae cursus libero congue nec. Etiam sed ligula dictum, aliquet est eget, maximus purus. Aliquam finibus enim risus, vitae tempor nulla feugiat et. Nulla ut rutrum lectus. Duis ac dolor et felis laoreet sollicitudin.</p>
+      </section>
+      <section lang="en-US" className="Education">
+        <h2>Education</h2>
+         <p>University Graduated 2016</p>
+      </section>
+      </div>
+        )
+    }
+     ReactDOM.render(
+         <div>
+           <App/>
+         </div>,
+         document.querySelector('#application-root')
+     );
+    </script>
+</body>
+</html>
